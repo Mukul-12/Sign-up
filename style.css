@@ -1,0 +1,93 @@
+body{
+    background-color: #8e9ebd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign-up{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color:white;
+    border-radius: 3px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: indianred;
+}
+h4{
+    text-align: center;
+    color: rgb(32, 118, 146);
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+}
+button{
+    width: 316px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #49c1a2;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: violet;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.para1{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.login{
+    width: 360px;
+    height: 320px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.forget{
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: x-small;
+    margin-top: 5px;
+    margin-right: -20px;
+}
+
+.Forget-password{
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+h2{
+    padding-top: 15px;
+    text-align: center;
+    color: indianred;
+}
+

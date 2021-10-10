@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sign-up">
+    <h1>Sign Up</h1>
+    <h4>It's Free and only takes a minute</h4>
+    <form onsubmit="return checkPassword(this)" action="./login.html">
+        <label>First Name
+            <input type="text" name="fname" id="firstName" placeholder="Please Enter your First Name" required/>
+        </label>
+        <label>Last Name
+            <input type="text" name="lname" id="lastName" placeholder="Please Enter your Last Name" required/>
+        </label>
+        <label >E-mail
+            <input type="email" name="Email" id="email" placeholder="Please Enter your email-id" required/>
+        </label>
+        <label>Password
+            <input class="password" type="password" id="pass" name="password" placeholder="Please Enter your Password" required/>
+        </label>
+        <label>Confirm Password
+            <input class="cpassword" type="password" name="confirmPassword" name="confirmPassword" placeholder="Please Enter your Confirm Password" id="cpass" required/>
+        </label>
+        <!-- <input id="button" type="submit" value="Sign Up"/> -->
+        <button class="button" id="submit">Sign-up</button>
+    </form>
+    <p>By Clicking the Sign up button, you are agree to our <br /> <a href="terms.html">Terms and Condition</a> Please Read it carefully.</p>
+    </div>
+    <p class="para1">Already have an account? <a href="login.html"> Login Here</a></p>
+    <script>
+            function checkPassword(form){
+                pass1 = form.password.value;
+                pass2 = form.confirmPassword.value;
+                if(pass1 != pass2){
+                    alert("Please Enter Correct Password");
+                    return false
+                }
+            }
+    </script>
+    
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+<script src="./fireConfig.js"></script>
+
+<script src="./info.js"></script>
+</body>
+</html>
